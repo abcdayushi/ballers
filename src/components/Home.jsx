@@ -67,31 +67,31 @@ const Home = () => {
 
       
       <style jsx>{`
-        @media (max-width: 375px) { /* Targeting iPhone SE */
+        @media (max-width: 375px)
           .absolute.top-40 {
-            top: 12rem; /* Push the icons further below navbar on mobile */
+            top: 12rem; 
           }
 
           .absolute.top-40 md:top-28 {
-            top: 12rem; /* Ensure icons are pushed below navbar on mobile */
+            top: 12rem; 
           }
 
-          /* Adjust the icon sizes for smaller screens */
+          
           .w-20 {
             width: 32px;
             height: 32px;
           }
 
           .text-sm {
-            font-size: 12px; /* Make text smaller for better fitting */
+            font-size: 12px;
           }
 
           .text-5xl {
-            font-size: 2rem; /* Reduce font size of "Community" text */
+            font-size: 2rem; 
           }
 
           .absolute.top-40.md\:top-28 {
-            top: 12rem; /* Adjust position for smaller screens */
+            top: 12rem; 
           }
         }
       `}</style>
