@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation for checking current path
-import assets from '../assets/assets'; // Import assets module (including baller.svg)
+import { Link, useLocation } from 'react-router-dom'; 
+import assets from '../assets/assets'; 
 
 const Navbar = () => {
-  const location = useLocation(); // Hook to get the current path
+  const location = useLocation(); 
   const [active, setActive] = useState('');
 
-  // Update active state when the location changes
+  
   useEffect(() => {
     if (location.pathname === '/') {
       setActive('Home');
@@ -17,22 +17,22 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full h-24 flex items-center justify-between px-12 z-50">
-      {/* Left Side: "BALLERS" Text with a more aesthetic and italic font */}
+
       <div className="absolute inset-x-0 text-center flex items-center md:text-5xl text-xs font-bold tracking-wide uppercase font-playfair italic text-black shadow-lg md:inset-x-auto md:left-8">
-        {/* "BALLERS" Text */}
+        
         <span className="text-white mr-3">Ballers</span>
 
-        {/* Baller SVG Icon with Further Reduced Size for iPhone SE */}
+        
         <img
-          src={assets.baller} // Assuming baller.svg is available in assets.js
+          src={assets.baller} 
           alt="Baller Logo"
-          className="baller-icon" // Use a custom class for mobile styling
+          className="baller-icon" 
         />
       </div>
 
-      {/* Right Side: Navbar Links (Visible only on desktop) */}
+     
       <ul className="hidden md:flex gap-12 items-center text-sm font-semibold tracking-widest uppercase justify-end w-full">
-        {/* Home Link */}
+       
         <li>
           <Link
             to="/"
@@ -43,7 +43,7 @@ const Navbar = () => {
             Home
           </Link>
         </li>
-        {/* About Link */}
+        
         <li>
           <Link
             to="/about"
@@ -55,7 +55,7 @@ const Navbar = () => {
           </Link>
         </li>
 
-        {/* "Join Now" Button */}
+        
         <li>
           <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full font-semibold text-sm uppercase hover:bg-gradient-to-l hover:from-blue-500 hover:to-green-400 transition-all">
             Join Now
@@ -63,9 +63,9 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Mobile View: Icons Below Ballers */}
+      
       <div className="absolute top-0 right-0 flex md:hidden flex-row items-center justify-end gap-2 mt-2">
-        {/* Home Icon */}
+        
         <Link
           to="/"
           className={`text-white text-xs font-bold flex items-center ${
@@ -75,7 +75,7 @@ const Navbar = () => {
           Home
         </Link>
 
-        {/* About Icon */}
+        
         <Link
           to="/about"
           className={`text-white text-xs font-bold flex items-center ${
@@ -85,13 +85,13 @@ const Navbar = () => {
           About
         </Link>
 
-        {/* Join Now Button */}
+        
         <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-1 rounded-full font-semibold text-xs uppercase hover:bg-gradient-to-l hover:from-blue-500 hover:to-green-400 transition-all">
           Join Now
         </button>
       </div>
 
-      {/* CSS for mobile screen adjustments */}
+      
       <style jsx>{`
         @media (max-width: 375px) { /* Targeting iPhone SE */
           .text-xs {
