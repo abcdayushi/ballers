@@ -52,30 +52,30 @@ const About = () => {
 
       
       <style jsx>{`
-        @media (max-width: 375px) {  /* Targeting iPhone SE screen size */
+        @media (max-width: 375px) {  
           .absolute {
-            top: 40px;  /* Adjust position of slogan to avoid overlap with navbar */
+            top: 40px;  
           }
           .iphone-slogan {
-            top: 80px;  /* Adjust position of slogan to be just above the mission box */
+            top: 80px;  
           }
           .w-full {
-            width: 80%; /* Reduce width of the boxes */
+            width: 80%; 
           }
           .p-4 {
-            padding: 1rem; /* Adjust padding inside the boxes for mobile */
+            padding: 1rem; 
           }
           .text-xs {
-            font-size: 0.65rem;  /* Reduce font size of text for smaller screen */
+            font-size: 0.65rem;  
           }
           .text-sm {
-            font-size: 0.75rem;  /* Adjust font size for smaller screens */
+            font-size: 0.75rem;  
           }
           .w-full.sm\:w-96 {
-            width: 90% !important;  /* Ensure the boxes are smaller on mobile */
+            width: 90% !important;  
           }
           .gap-8 {
-            gap: 2px !important; /* Reduce gap between boxes even further */
+            gap: 2px !important; 
           }
         }
       `}</style>
