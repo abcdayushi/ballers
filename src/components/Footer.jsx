@@ -58,27 +58,27 @@ const Footer = () => {
 
       
       <style jsx>{`
-        @media (max-width: 375px) { /* Targeting mobile screens */
+        @media (max-width: 375px) 
           .py-2 {
-            padding-top: 1rem; /* Further reduce top padding */
-            padding-bottom: 1rem; /* Further reduce bottom padding */
+            padding-top: 1rem; 
+            padding-bottom: 1rem; 
           }
 
           .text-3xl {
-            font-size: 1.5rem; /* Smaller font size for "BALLERS" text */
+            font-size: 1.5rem;
           }
 
           .gap-4 {
-            gap: 1rem; /* Reduce gap between icons */
+            gap: 1rem; 
           }
 
           .text-xs {
-            font-size: 0.7rem; /* Smaller font size for "All Rights Reserved" text */
+            font-size: 0.7rem; 
           }
 
           .flex {
-            flex-direction: column; /* Stack elements vertically */
-            align-items: center; /* Center align the content */
+            flex-direction: column; 
+            align-items: center; 
           }
         }
       `}</style>
